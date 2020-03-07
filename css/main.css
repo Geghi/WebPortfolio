@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat|Spartan&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script&display=swap');
-	
+
 /*Global*/
 *{
 	margin: 0;
@@ -19,9 +19,9 @@ body{
 	width: 100%;
 	height: 100%;
 	background: #221e3e;
-	background: -moz-linear-gradient(0deg, rgba(34,30,63,1) 0%, rgba(24,30,63,1) 100%) fixed;
-	background: -webkit-linear-gradient(0deg, rgba(34,30,63,1) 0%, rgba(24,30,63,1) 100%) fixed;
-	background: linear-gradient(0deg, rgba(34,30,63,1) 0%, rgba(24,30,63,1) 100%) fixed;
+	background: -moz-linear-gradient(0deg, #221e3f 0%, #181e3f 100%) fixed;
+	background: -webkit-linear-gradient(0deg, #221e3f 0%, #181e3f 100%) fixed;
+	background: linear-gradient(0deg, #221e3f 0%, #181e3f 100%) fixed;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#221e3f",endColorstr="#181e3f",GradientType=1) fixed;
 	overflow-x: hidden; /* Hide horizontal scrollbar */
 }
@@ -276,7 +276,7 @@ li{
 }
 
 .menu-toggler{
-	position: absolute;
+	position: fixed;
 	top: 5em;
 	right: 5em;
 	width: 5em;
@@ -321,6 +321,14 @@ li{
 
 .open .bar.end{
 	transform: rotate(-450deg) translateX(-.8rem);
+}
+
+.bar.middle{
+	transition: transform 650ms cubic-bezier(.5, -0.99, .67, .75);
+}
+
+.open .bar.middle{
+	transform: rotate(-180deg);	
 }
 
 .landing-text{
@@ -447,15 +455,15 @@ li{
 .icon-container{
 	width: 10rem;
 	height: 10rem;
-	border: 3px solid #ffe838;
-	background-color: rgba(255, 117, 30, 0.91);
+	border: 3px solid #fff5a8;
+	background-color: rgba(255, 125, 68, 0.83);
 	margin-bottom: 2rem;
 	display: flex;
 	transform: rotate(45deg);
 }
 
 .icon-container i{
-	color: #ffe838;
+	color: #f2e89b;
 	font-size: 5rem;
 	margin: auto;
 	transform: rotate(-45deg);
@@ -510,10 +518,6 @@ li{
 /*End Projects*/
 
 /*Contact Me*/
-.contact{
-	background-color: #221e3f;
-}
-
 form{
 	width: 70%;
 	margin: 0 auto;
@@ -620,6 +624,14 @@ input[type="submit"]:hover{
 		flex-direction: column;
 	}
 	
+	.about-details .nav-list{
+		flex-direction: initial;
+	}
+	
+	.about-details li{
+		margin: 0 2rem;
+	}
+	
 	li{
 		margin: 2rem 0rem;
 	}
@@ -666,14 +678,6 @@ input[type="submit"]:hover{
 	
 	.section-heading h1{
 		font-size: 3rem;
-	}
-	
-	.about-details .nav-list{
-		flex-direction: initial;
-	}
-	
-	.about-details li{
-		margin: 0 2rem;
 	}
 	
 	.icon-container{
