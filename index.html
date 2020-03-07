@@ -51,6 +51,12 @@
 		<!-- BACKGROUND ANIMATION -->
 		<div class="animation-area">
 			<ul class="box-area">
+				<i class="fab fa-js-square"></i>
+				<i class="fab fa-java"></i>
+				<i class="fab fa-html5"></i>
+				<i class="fab fa-php"></i>
+				<i class="fab fa-python"></i>
+				<i class="fab fa-css3"></i>
 				<li></li>
 				<li></li>
 				<li></li>
@@ -188,18 +194,18 @@
 					<h1>Contact me</h1>
 					<h6>Let's work together</h6>
 				</div>
-				<form action="" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1500">
+				<form netlify action="./php/submit.php" method="post" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1500">
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="name" placeholder="Enter your name..." required>
 					<label for="email">Email:</label>
 					<input type="email" id="email" name="email" placeholder="Enter your email..." required>
 					<label for="service">Services:</label>
 					<select name="service" id="service">
-						<option value="">Software Developement</option>
-						<option value="">Web Developement</option>
+						<option value="Software Developement">Software Developement</option>
+						<option value="Web Developemet">Web Developement</option>
 					</select>
 					<label for="subject">Subject:</label>
-					<textarea name="subject" id="subject" cols="10" rows="10"></textarea>
+					<textarea name="subject" id="subject" cols="10" rows="10" required></textarea>
 					<input type="submit" value="submit">
 				</form>
 			</div>
