@@ -5,6 +5,7 @@
 		<title>Mantovani Giacomo</title>	
 		<meta charset="utf-8"> 
 		<meta name = "author" content = "Mantovani Giacomo">
+		<meta name="viewport" content="width=device-width">
 		<link href="./css/main.css" rel="stylesheet" type="text/css">
 		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -50,20 +51,14 @@
 		
 		<!-- BACKGROUND ANIMATION -->
 		<div class="animation-area">
-			<ul class="box-area">
+			<div class="box-area">
 				<i class="fab fa-js-square"></i>
 				<i class="fab fa-java"></i>
 				<i class="fab fa-html5"></i>
 				<i class="fab fa-php"></i>
 				<i class="fab fa-python"></i>
 				<i class="fab fa-css3"></i>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
+			</div>
 		</div>
 		
 		<!-- ABOUT ME SECTION STARTS HERE -->
@@ -149,40 +144,35 @@
 						<p>
 							This is a java application that allows the user to search and vote a film. Moreover there is an analytics section where you can perform some advanced queries on the movie database.
 						</p>
-						<a href="https://github.com/Geghi/Task2" class="cta">View Details</a>
+						<a href="https://github.com/Geghi/Task2" class="cta">View Code</a>
 					</div>
 				</div>
 				<div class="project-item">
-					<div class="project-description" data-aos="fade-right" data-aos-delay="300">
+					<div class="project-description"  data-aos="fade-right" data-aos-delay="300">
+						<h6>Web Developement</h6>
+						<h1>B&B Arena Alfieri</h1>
+						<p>
+							This is a website made for a B&B where you can find all the informations about the location.
+						</p>
+						<a href="https://arenaalfieri.000webhostapp.com/" class="cta">View Website</a>
+					</div>
+					<div class="project-image has-margin-left" data-aos="fade-left" data-aos-delay="300">
+						<img src="./css/images/ArenaAlfieri.png" alt="">
+					</div>
+				</div>
+				<div class="project-item">
+					<div class="project-image has-margin-right" data-aos="fade-right" data-aos-delay="300">
+						<img src="./css/images/calisthenicsLivorno.png" alt="">
+					</div>
+					<div class="project-description" data-aos="fade-left" data-aos-delay="300">
 						<h6>Web Developement</h6>
 						<h1>Calisthenics Livorno Gym</h1>
 						<p>
 							This is a gym website where you can sign up and login to access the gym forum or to reserve a course.
 						</p>
-						<a href="https://github.com/Geghi/GymSite" class="cta">View Details</a>
-					</div>
-					<div class="project-image has-margin-left" data-aos="fade-left" data-aos-delay="300">
-						<img src="./css/images/calisthenicsLivorno.png" alt="">
+						<a href="https://calisthenicslivornowebsite.000webhostapp.com/" class="cta">View Website</a>
 					</div>
 				</div>
-				
-				<!-- NEXT PROJECT TO BE ADDED
-
-				<div class="project-item">
-					<div class="project-image has-margin-right" data-aos="fade-right" data-aos-delay="300">
-						<img src="./css/images/portitem1.jpeg" alt="">
-					</div>
-					<div class="project-description" data-aos="fade-left" data-aos-delay="300">
-						<h6>Web Design</h6>
-						<h1>website</h1>
-						<p>
-							description.
-						</p>
-						<a href="#" class="cta">View Details</a>
-					</div>
-				</div>
-
-				-->
 			</div>
 		</section>
 
@@ -194,7 +184,7 @@
 					<h1>Contact me</h1>
 					<h6>Let's work together</h6>
 				</div>
-				<form netlify action="./php/submit.php" method="post" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1500">
+				<form netlify action="./success.html" method="post" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1500">
 					<label for="name">Name:</label>
 					<input type="text" id="name" name="name" placeholder="Enter your name..." required>
 					<label for="email">Email:</label>
@@ -210,10 +200,6 @@
 				</form>
 			</div>
 		</section>
-		
-		
-		
-		
 
 		<footer class="copyright">
 			<div class="up" id="up">
